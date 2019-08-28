@@ -11,21 +11,22 @@ public class Main {
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 
-        Raum test_a = new Raum (5,5);
-        Raum test_b= new Raum (7,7);
+        Raum test_a = new Raum (5,5, "a");
+        Raum test_b= new Raum (7,7, "b");
         test_a.connect(test_b,0);
 
-        Raum test_c = new Raum (9,9);
-        Raum test_d = new Raum (8,8);
+        Raum test_c = new Raum (9,9, "c");
+        Raum test_d = new Raum (8,8, "d");
         test_c.connect(test_a, 3);
         test_c.connect(test_d, 0);
         test_b.connect(test_d,1);
 
-        Raum test_e = new Raum (6,6);
-        Raum test_f = new Raum (4,4);
-        Raum test_g = new Raum (3,3);
-        Raum test_h = new Raum (2,2);
-        Raum test_i = new Raum (1,1);
+        Raum test_e = new Raum (6,6, "e");
+        Raum test_f = new Raum (4,4, "f");
+        Raum test_g = new Raum (3,3, "g");
+        Raum test_h = new Raum (2,2, "h");
+        Raum test_i = new Raum (1,1, "i");
+        Raum test_j = new Raum (3,3, "j");
         test_e.connect(test_c,3);
         test_e.connect(test_f,0);
         test_f.connect(test_d,3);
